@@ -1,3 +1,7 @@
+
+#Install sqldf by running install.packages('sqldf')
+# For loading sqldf library
+library(sqldf)
 #Reading the data that is needed for project using sql statement with read.csv.sql of sqldf package
 f<-read.csv.sql("household_power_consumption.txt",sql="select * from file where Date='1/2/2007' OR Date='2/2/2007'",sep=";")
 
